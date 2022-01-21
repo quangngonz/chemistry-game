@@ -1,0 +1,108 @@
+.PTable--Modal {
+  grid-row-start: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.GoHome {
+  font-size: 30px;
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.DetailTitle {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.big_title {
+  display: inline-block;
+}
+
+.cat_name {
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 0 5px;
+  margin-left: 5px;
+  top: -0.7vw;
+  position: relative;
+}
+
+.appearance {
+  margin-bottom: 0.5vw;
+}
+
+.atom_info {
+  margin-bottom: 0.5vw;
+  color: #998100;
+}
+
+/* Noble Gas  */
+.noble {
+  background: #f3d2e8;
+}
+
+/* Alkali Metal  */
+.alkali {
+  background: #f88379;
+}
+
+/* Alkaline Earth Metal  */
+.alkaline {
+  background: #ffc3a0;
+}
+
+/* Transition Metal  */
+.transition {
+  background: #e9ff08;
+}
+
+/* Polyatomic Non Metal  */
+.polyatomic {
+  background: #a3d2d5;
+}
+
+/* Diatomic Non Metal  */
+.diatomic {
+  background: #a3d5bf;
+}
+
+/* Post Transition Metal  */
+.post-transition {
+  background: #8eb1e7;
+}
+
+/* Metalloid  */
+.metalloid {
+  background: #5ed89c;
+}
+
+/* Lanthanide  */
+.lanthanide {
+  background: #c9f;
+  /* Put a space to seperate the split table  */
+  /* margin-top: 2.5vw; */
+}
+
+/* Actinide  */
+.actinide {
+  background: #ad87bd;
+}
+
+/* The Unknown Element  */
+.unknown {
+  background: #cff;
+}
+
+.DataSource {
+  font-style: italic;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}

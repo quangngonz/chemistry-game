@@ -1,0 +1,49 @@
+.Wrong {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 51, 168, 0.64);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+progress {
+  width: 400px;
+  border: 0; /* for IE */
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+/* necessary to style the progress bar background */
+::-webkit-progress-bar {
+  background-color: white;
+}
+
+/** ---------
+    ANIMATED
+*/
+.animated::-webkit-progress-value {
+  transition: width 1s;
+  background-color: red;
+}
+.animated::-moz-progress-bar {
+  transition: padding-bottom 1s;
+  padding-left: 60px;
+  padding-bottom: var(--value);
+  background-color: red;
+  height: 0;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateX(-60px);
+}
+.animated::-ms-fill {
+  background-color: blue;
+  border: 0;
+}

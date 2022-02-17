@@ -7,6 +7,10 @@ import "rsuite/dist/rsuite.min.css";
 
 import "./PTable.css";
 
+const converKToC = (K) => {
+  return Math.round(K - 273 * 10) / 10;
+};
+
 const PTable = ({ goHome }) => {
   const [open, setOpen] = useState(false);
 
@@ -71,8 +75,8 @@ const PTable = ({ goHome }) => {
             <span>Atomic Mass: {DetailAtomicMass} | </span>
             <span>Density: {DetailDensity}</span>
             {Detailmolar_heat && <span> | Molar Heat: {Detailmolar_heat}</span>}
-            {Detailmelt && <span> | Melt: {Detailmelt}K</span>}
-            {Detailboil && <span> | Boil: {Detailboil}K</span>}
+            {Detailmelt && <span> | Melt: {converKToC(Detailmelt)} ºC</span>}
+            {Detailboil && <span> | Boil: {converKToC(Detailboil)} ºC</span>}
           </div>
           <div>
             {Detailsummary} ...{" "}

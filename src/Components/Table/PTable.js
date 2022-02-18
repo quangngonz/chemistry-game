@@ -8,7 +8,8 @@ import "rsuite/dist/rsuite.min.css";
 import "./PTable.css";
 
 const converKToC = (K) => {
-  return Math.round(K - 273 * 10) / 10;
+  const Celsius = K - 273.15;
+  return Math.round(Celsius * 10) / 10;
 };
 
 const PTable = ({ goHome }) => {

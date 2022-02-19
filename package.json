@@ -24,6 +24,7 @@
     "react-animated-progress-bar": "^1.0.4",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-countdown": "^2.3.2",
+    "react-data-table-component": "^7.4.7",
     "react-dom": "^16.13.1",
     "react-modal": "^3.14.3",
     "react-portal-overlay": "^1.1.0",

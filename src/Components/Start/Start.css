@@ -83,3 +83,13 @@
 .logo {
   width: 60px;
 }
+
+.StartRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.StartRow > button {
+  margin: 10px;
+  margin-top: 10px;
+}

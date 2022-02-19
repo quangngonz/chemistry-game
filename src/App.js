@@ -5,6 +5,7 @@ import Game1 from "./Components/Game1/Game1";
 import ScoreBoard from "./Components/Periodic_Table/ScoreBoard";
 import Start from "./Components/Start/Start";
 import PTable from "./Components/Table/PTable";
+import HighScorePage from "./Components/HighScore/HighScore";
 // import Test from "./Components/Test/Test";
 
 // import PeriodicTable from "./Components/Periodic_Table/PeriodicTable";
@@ -26,6 +27,10 @@ function App() {
     setGameState(2);
   };
 
+  const openRanking = () => {
+    setGameState(4);
+  };
+
   const goHome = () => setGameState(0);
 
   return (
@@ -43,8 +48,14 @@ function App() {
         <PTable goHome={goHome} />
       ) : GameState === 3 ? (
         <ScoreBoard yourScore={Score} HighScore={HighScore} endGame={goHome} />
+      ) : GameState === 4 ? (
+        <HighScorePage goHome={goHome} />
       ) : (
-        <Start startGame1={startGame1} startGame2={startGame2} />
+        <Start
+          startGame1={startGame1}
+          startGame2={startGame2}
+          openRanking={openRanking}
+        />
         // <Wrong />
       )}
     </div>

@@ -10,6 +10,49 @@
   color: white;
 }
 
+.NameInput {
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #fff;
+  width: 60%;
+  margin-bottom: 5px;
+
+  text-align: center;
+}
+
+.NameNeed {
+  border: 0;
+  border-bottom: 2px solid red;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #fff;
+  width: 60%;
+  margin-bottom: 5px;
+
+  text-align: center;
+}
+
+.NameInput:focus,
+.NameNeed:focus {
+  outline: none;
+}
+
 .ScoreBoard--container {
   border-radius: 20px;
   border-style: solid;
@@ -25,7 +68,7 @@
 
 .ScoreBoard--Details {
   font-size: 1.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 /* CSS */

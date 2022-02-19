@@ -37,9 +37,6 @@ const Game1 = ({ Score, setScore, HighScore, setHighScore, setGameState }) => {
   const newQuestion = () => {
     var randomElements = Math.floor(Math.random() * 119);
     setElementName(DataList[randomElements].name);
-
-    console.log(DataList[randomElements]);
-    console.log(typeof DataList);
   };
 
   React.useEffect(() => {

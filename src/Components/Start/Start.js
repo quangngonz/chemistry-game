@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 import "./Start.css";
 
 import logo from "../../assets/Logo.png";
 
-const Start = ({ startGame1, startGame2 }) => {
+const Start = ({ startGame1, startGame2, openRanking }) => {
   const [TopScore, setTopScore] = useState();
 
   useEffect(() => {
@@ -22,9 +21,16 @@ const Start = ({ startGame1, startGame2 }) => {
       <button className="button-64" onClick={startGame1}>
         <span className="text">Find the element</span>
       </button>
-      <button className="button-64" onClick={startGame2}>
-        <span className="text">Periodic Table</span>
-      </button>
+
+      <div className="StartRow">
+        <button className="button-64" onClick={startGame2}>
+          <span className="text">Periodic Table</span>
+        </button>
+
+        <button className="button-64" onClick={openRanking}>
+          <span className="text">Ranking</span>
+        </button>
+      </div>
 
       <p className="author">By: Quang Ngo - Year 10</p>
     </div>

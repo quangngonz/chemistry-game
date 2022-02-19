@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/helper-skip-transparent-expression-wrappers": "^7.16.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@testing-library/jest-dom": "^4.2.4",

@@ -22,7 +22,7 @@ const sendData = async (name, score) => {
 
   const options = {
     method: "POST",
-    url: "http://isph-chemistry-game.herokuapp.com/sendScore",
+    url: "https://isph-chemistry-game.herokuapp.com/sendScore",
     headers: { "Content-Type": "application/json" },
     data: { name: name, score: score, time: datetime },
   };

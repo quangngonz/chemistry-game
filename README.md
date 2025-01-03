@@ -84,7 +84,8 @@ Contributions to this project are welcome. Please feel free to fork the reposito
 
 ## Acknowledgements
 
-- Data for the periodic table is sourced from [Bowserinator's Periodic-Table-JSON](https://github.com/Bowserinator/Periodic-Table-JSON).
+- Data for the periodic table is sourced from [muratkemaldar's periodic-table-css](https://github.com/muratkemaldar/periodic-table-css).
+- 
 
 ## Author
 

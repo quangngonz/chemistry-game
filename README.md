@@ -1,70 +1,91 @@
-# Periodic Table of Elements with React + CSS Grid
+# Chemistry Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based interactive chemistry game built with React. It features two main game modes: "Find the Element" and a detailed "Periodic Table" exploration. The game is designed to be educational and fun, helping users learn about the elements in an engaging way.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Find the Element Game:** Test your knowledge of the periodic table by finding elements based on given clues.
+- **Periodic Table Exploration:** Explore an interactive periodic table with detailed information about each element.
+- **Score Tracking:** Keeps track of your score and high score.
+- **Ranking System:** View a leaderboard of top scores.
+- **Responsive Design:** Optimized for various screen sizes.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone the repository:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+git clone https://github.com/quangngonz/chemistry-game
+```
 
-### `npm test`
+2. Navigate to the project directory:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd chemistry-game
+```
 
-### `npm run build`
+3. Install dependencies:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Running the App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start the development server, run:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This will open the app in your default browser, typically at `http://localhost:3000`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Building for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To create a production build of the app, run:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+This will create an optimized build in the `build` directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Game Modes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Find the Element
 
-### Code Splitting
+- **Objective:** Find the correct element on the periodic table based on the given name.
+- **Gameplay:**
+  - A random element name is displayed.
+  - Click on the corresponding element in the periodic table.
+  - Correct answers increase your score.
+  - Incorrect answers trigger a penalty.
+- **Timer:** A countdown timer adds urgency to the game.
+- **Scoring:** Your score and high score are displayed and updated in real-time.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### 2. Periodic Table
 
-### Analyzing the Bundle Size
+- **Objective:** Learn about the elements and their properties.
+- **Features:**
+  - Click on any element to view detailed information.
+  - Information includes atomic mass, density, appearance, melting/boiling points, and a summary.
+  - Links to external sources for more in-depth information.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### 3. Ranking
 
-### Making a Progressive Web App
+- **Objective:** View top scores from other players.
+- **Features:**
+  - Displays a table of player names and their scores.
+  - Fetches data from a backend server.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Contributing
 
-### Advanced Configuration
+Contributions to this project are welcome. Please feel free to fork the repository, make changes, and submit a pull request.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Acknowledgements
 
-### Deployment
+- Data for the periodic table is sourced from [Bowserinator's Periodic-Table-JSON](https://github.com/Bowserinator/Periodic-Table-JSON).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Author
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Quang Ngo - ISPH
